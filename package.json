@@ -1,0 +1,12 @@
+{
+  "name": "moviemark",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -k -n api,web -c cyan,magenta \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
